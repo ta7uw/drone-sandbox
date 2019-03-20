@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+workspace:
+  path: main/
+steps:
+  - name: test
+    image: golang
+    commands:
+      - go build
+      - go test
