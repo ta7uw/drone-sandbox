@@ -9,5 +9,4 @@ steps:
   - name: test
     image: golang:1.11
     commands:
-      - go build -v github.com/takaaki82/drone-sandbox/
       - go test -v ./...
