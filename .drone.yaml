@@ -9,6 +9,7 @@ steps:
   - name: test
     image: golang:1.11
     commands:
+      - pwd
       - go test -v ./...
 
 ---
