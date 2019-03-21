@@ -2,9 +2,11 @@
   kind: "pipeline",
   name: name,
   workspace: [
+  {
     base: "/go",
     path: "src/github.com/takaaki82/drone-sandbox",
-  ]
+    }
+  ],
   steps: [
   {
     name: "test",
