@@ -1,0 +1,13 @@
+kind: pipeline
+name: default
+
+workspace:
+  base: /go
+  path: src/github.com/takaaki82/drone-sandbox
+
+steps:
+  name: test
+    image: golang
+    commands:
+      - go build -v github.com/takaaki82/drone-sandbox/go
+      - go test -v ./...
