@@ -10,6 +10,7 @@ steps:
     image: golang:1.11
     commands:
       - go test -v ./...
+
 ---
 kind: pipeline
 name: go-1-12
