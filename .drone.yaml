@@ -7,7 +7,7 @@ workspace:
 
 steps:
   name: test
-    image: golang
+    image: golang:1.11
     commands:
       - go build -v github.com/takaaki82/drone-sandbox/go
       - go test -v ./...
