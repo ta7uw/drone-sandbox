@@ -9,7 +9,7 @@ steps:
   - name: test
     image: golang:1.11
     commands:
-      - go -v ./go
+      - go build -v ./go
       - go test -v ./...
 
 ---
