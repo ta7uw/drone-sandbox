@@ -18,4 +18,3 @@ steps:
     commands:
       - go build -v ./go/main.go
       - go test -v ./...
-
