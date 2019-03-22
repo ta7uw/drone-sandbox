@@ -6,13 +6,23 @@ workspace:
   path: src/github.com/takaaki82/drone-sandbox
 
 steps:
-  - name: test-1-11
+  - name: test
     image: golang:1.11
     commands:
       - go build -v ./go/main.go
       - go test -v ./...
-      -
-  - name: test-1-12
+
+---
+kind: pipeline
+name: go-1-12
+
+workspace:
+  base: /go
+  path: src/github.com/takaaki82/drone-sandbox
+
+steps:
+  - name: test
     image: golang:1.12
     commands:
+      - go build -v ./go/main.go
       - go test -v ./...
